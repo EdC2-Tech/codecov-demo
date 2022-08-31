@@ -16,7 +16,6 @@ jobs:
           name: Run tests and collect coverage
           command: pytest --cov api/ --cov-report=xml
       - codecov/upload
-           file: coverage.xml
            
 workflows:
   version: 2.1
